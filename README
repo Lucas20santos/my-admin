@@ -1,0 +1,10 @@
+# Criando um Admin complento em Node.js e React com AdminJS
+
+## Tecnologia usadas
+
+- React JS para a parte do FRONT END
+- Node JS  Para a parte do Back END
+- Banco de dados Postgres
+- Sequelize para o gerenciamento do banco de dados
+
+## Produto do canal do youtube dev samurai
