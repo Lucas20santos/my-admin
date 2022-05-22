@@ -1,19 +1,20 @@
-import AdminJS from 'adminjs';
-import AdminJSExpress from '@adminjs/express';
-import express from 'express'
+const AdminJS = require('adminjs');
+const AdminJSExpress = require('@adminjs/express');
+
+const express = require('express');
 
 
 const app = express();
 
-const AdminJS = new AdminJS({
+const Admin = new AdminJS({
     database: [],
     rootPath: '/admin',
-    resources: []
+    resources: [],
 });
 
-const router = AdminJSExpress.buildRouter(AdminJS)
+const router = AdminJSExpress.buildRouter(Admin);
 
-app.use(AdminJS.options.rootPath, router)
+app.use(Admin.options.rootPath, router)
 app.listen(5000, () => {
     console.log("AdminJS is under http://localhost:5000/admin");
 });
